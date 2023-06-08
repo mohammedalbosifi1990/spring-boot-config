@@ -1,0 +1,56 @@
+Logging:
+  LogLevel:
+    Default: Information
+    Microsoft: Warning
+    Microsoft.Hosting.Lifetime: Information
+AllowedHosts: '*'
+RedisConfig:
+  connectionString: localhost:6379
+LogOptions:
+  ConnectionString: >-
+    Data Source=10.10.20.45\SQLEXPRESS;Initial Catalog=MobiCash;User
+    ID=Perm_PaymentChannel;Password=1111;encrypt=false
+  TableName: PermTestingMain
+  SemiLogTableName: PermTestingSemi
+BusOptions:
+  RabbitMqAddress: 10.10.20.44
+  RabbitMqVirtualHost: NabelMQ
+  RabbitMqUserName: test
+  RabbitMqPassword: test
+  RabbitMqHostName: BackOffice
+CustomerActiveServicesOptions:
+  ActiveServicesOptions:
+    - DBValue: 8
+      ServiceName: InqServiceId
+      CodeValue: 1
+    - DBValue: 10
+      ServiceName: BVServiceId
+      CodeValue: 2
+    - DBValue: 9
+      ServiceName: MTServiceId
+      CodeValue: 4
+    - DBValue: 21
+      ServiceName: PBServiceId
+      CodeValue: 16
+    - DBValue: 18
+      ServiceName: DWServiceId
+      CodeValue: 8
+    - DBValue: 19
+      ServiceName: BankCertifcateId
+      CodeValue: 32
+    - DBValue: 20
+      ServiceName: StopCheakId
+      CodeValue: 64
+swagger:
+  name: v1
+  title: Mobile Channel
+  version: v1
+  IsActive: true
+  BaseUrl: /swagger/v1/swagger.json
+Spring:
+  Application:
+    Name: mitt_config
+  Cloud:
+    Config:
+      Uri: http://localhost:8888
+      ValidateCertificates: false
