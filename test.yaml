@@ -2,3 +2,5 @@ baseDataUri: "https://opendata.nederlandwereldwijd.nl/v1/sources/nederlandwereld
 fetchInterval: "00:05:00"
 foo: "Hello  albosifi"
 bar: "Hello Mohammed albosifi"
+info:
+  url:"TOTOTOTOTOTOTOTOTOTOTOTOTO"
