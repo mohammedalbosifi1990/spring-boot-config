@@ -13,7 +13,7 @@ LogOptions:
   TableName: PermTestingMain
   SemiLogTableName: PermTestingSemi
 BusOptions:
-  RabbitMqAddress: 10.10.20.44
+  RabbitMqAddress: 10.10.20.88
   RabbitMqVirtualHost: NabelMQ
   RabbitMqUserName: test
   RabbitMqPassword: test
