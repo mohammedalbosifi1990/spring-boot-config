@@ -1,4 +1,14 @@
 {
-  "xxx":"mohammedalbosifi",
-  "Bar":"Test Home"
+    "info": {
+        "description": "Spring Cloud Samples bebebebebe",
+        "url": "https://github.com/spring-cloud-samples"
+    },
+    "eureka": {
+        "client": {
+            "serviceUrl": {
+                "defaultZone": "http://localhost:8761/eureka/"
+            }
+        }
+    },
+    "foo": "baz"
 }
